@@ -1,0 +1,10 @@
+html{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Single Day', cursive;
+}
+
+/*resize logo*/
+#top {
+  width: 100px;
+  height: 100px;
+}
