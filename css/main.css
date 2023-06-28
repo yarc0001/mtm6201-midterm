@@ -61,7 +61,7 @@ li a:hover{
   padding: 350px 50px;
   }
 
-  .banner-about{
+.banner-about{
     background-image: url(../images/about-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,6 +72,18 @@ li a:hover{
     font-size: 100px;
     color: #c5c381;
     }
+
+  .banner-contact{
+      background-image: url(../images/about-banner.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 55% 55%;
+      margin: 0;
+      padding: 100px 50px;
+      text-align: center;
+      font-size: 100px;
+      color: #c5c381;
+      }
 
 
 /* styles reasons section on home page */
@@ -150,6 +162,49 @@ margin: 100px;
   font-size: 70px;
 }
 
+
+/* styles form on contact page */
+
+.contact-form {
+  width: 90%;
+  margin: 20px;
+  padding: 20px;
+  color: #416057;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #416057;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #eeab6d;
+  color: #416057;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Single Day', cursive; 
+  font-size: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #646262;
+}
+
+form .container {
+  border-radius: 5px;
+  background-color: #fff7f7;
+  padding: 20px;
+  align-items: center;
+}
+
 /* styles footer */
 
 footer{
@@ -158,8 +213,30 @@ footer{
   margin: 0;
   padding: 0;
   color: #416057;
-  font-size: 15px;
-  
+  font-size: 15px; 
 }
 
+.logo-footer{
+  width: 90px;
+}
+
+
+ /* For mobile phones: */
+ [class*="row-column"] {
+  width: 100%;
+}
+
+  /* For tablets: */
+@media only screen and (min-width: 600px) {
+  .row .column{
+    width: 8.33%;
+  }
+}
+
+  /* For desktop: */
+@media only screen and (min-width: 768px) {
+  .row .column {
+    width: 8.33%;
+  }
+}
 
