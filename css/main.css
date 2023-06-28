@@ -61,7 +61,20 @@ li a:hover{
   padding: 350px 50px;
   }
 
-/* styles reasons */
+  .banner-about{
+    background-image: url(../images/about-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 55% 55%;
+    margin: 0;
+    padding: 100px 50px;
+    text-align: center;
+    font-size: 100px;
+    color: #c5c381;
+    }
+
+
+/* styles reasons section on home page */
 
   .why{
     font-size: 30px;
@@ -112,7 +125,7 @@ li a:hover{
   border-radius: 8px;
 }
 
-/* styles products */
+/* styles product offer on home page */
 
 .check{
   font-size: 30px;
@@ -123,6 +136,19 @@ li a:hover{
   padding: 50px;
 }
 
+
+/* styles mission on about page */
+
+.mission , .vision {
+border: solid 2px #eeab6d;
+border-radius: 60px;
+margin: 100px;
+}
+
+.mission-title , .vision-title {
+  color: #416057;
+  font-size: 70px;
+}
 
 /* styles footer */
 
