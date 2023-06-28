@@ -52,38 +52,72 @@ li a:hover{
 
 /* adds banners */
 
-.banner-home{
-  background-image: url(../images/banner-home.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  margin: 0;
-  padding: 350px 50px;
-  }
+.banner-home-container{
+
+  width: 100%;
+  height:80vh;
+  position: relative;
+  top: 0;
+  left:0;
+
+}
+
+.video-home{ 
+  width: 100%;
+  height:100%;
+  position:absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.banner-content{
+  width:100%;
+  display: grid;
+  place-items:center;
+  height: auto;
+  text-align:center;
+  color: #fff7f7;
+  
+}
+
+.banner-content h1{
+  color:#eeab6d;
+  font-size: 100px;
+  font-family: 'Single Day', cursive;;
+}
+
+.banner-content p{
+  color:white;
+  margin: 5px 0 40px 0;
+  font-size: 30px;
+}
+
 
 .banner-about{
-    background-image: url(../images/about-banner.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 55% 55%;
-    margin: 0;
-    padding: 100px 50px;
-    text-align: center;
-    font-size: 100px;
-    color: #c5c381;
-    }
+  background-image: url(../images/about-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 55% 55%;
+  margin: 0;
+  padding: 100px 50px;
+  text-align: center;
+  font-size: 100px;
+  color: #c5c381;
+}
 
-  .banner-contact{
-      background-image: url(../images/about-banner.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 55% 55%;
-      margin: 0;
-      padding: 100px 50px;
-      text-align: center;
-      font-size: 100px;
-      color: #c5c381;
-      }
+.banner-contact{
+  background-image: url(../images/about-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 55% 55%;
+  margin: 0;
+  padding: 100px 50px;
+  text-align: center;
+  font-size: 100px;
+  color: #c5c381;
+}
 
 
 /* styles reasons section on home page */
@@ -97,16 +131,40 @@ li a:hover{
     padding: 50px;
   }
 
-.column {
-  float: left;
-  width: 50%;
-  height: 50%;
+.column img {
+  width: 200px;
+  height: auto;
   padding: 10px;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.column2 img {
+  width: 200px;
+  height: 290px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.explanation {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+}
+
+.reference {
+  text-align: center;
+}
+
+.price {
+  text-align: center;
+}
+
 
 .row::after {
   content: "";
@@ -115,8 +173,13 @@ li a:hover{
 }
 
 .row {
-  display: flex;
-  
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+  grid-template-areas: 
+    "column column column column";
+  padding-left: 100px;
+  padding-right: 58px;
 }
 
 .column {
@@ -132,7 +195,8 @@ li a:hover{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 4px;
+  margin-left: 75px;
   cursor: pointer;
   border-radius: 8px;
 }
@@ -221,17 +285,11 @@ footer{
 }
 
 
- /* For mobile phones: */
- [class*="row-column"] {
+ /* For mobile: */
+ [class="row-column"] {
   width: 100%;
 }
 
-  /* For tablets: */
-@media only screen and (min-width: 600px) {
-  .row .column{
-    width: 8.33%;
-  }
-}
 
   /* For desktop: */
 @media only screen and (min-width: 768px) {
