@@ -19,7 +19,6 @@ font-size: 35px;
   width: 230px;
   height: 80px;
   float: left;
-
 }
 
 ul{
@@ -28,11 +27,10 @@ ul{
   padding: 5px;
   background-color: white;
   display: flex;
+  justify-content: flex-end;
 }
 
-li{
-  float: left;
-}
+
 
 li a{
   display: block;
@@ -133,17 +131,7 @@ li a:hover{
 
 .column img {
   width: 200px;
-  height: auto;
-  padding: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.column2 img {
-  width: 200px;
-  height: 290px;
+  height: 230px;
   padding: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -159,10 +147,14 @@ li a:hover{
 
 .reference {
   text-align: center;
+  width: 200px;
+  height: 50px;
 }
 
 .price {
   text-align: center;
+  height: auto;
+  width: 200px;
 }
 
 
@@ -178,27 +170,37 @@ li a:hover{
   justify-content: flex-start;
   grid-template-areas: 
     "column column column column";
-  padding-left: 100px;
-  padding-right: 58px;
 }
 
 .column {
   flex: 20%;
   padding: 0;
 }
+
 .button {
   background-color: white; 
   border: solid 1px #416057;
   color: #416057;
   padding: 5px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   display: inline-block;
+  position:relative;
   font-size: 16px;
   margin: 4px;
-  margin-left: 75px;
+  margin-left: 50px;
   cursor: pointer;
   border-radius: 8px;
+  width: 100px;
+}
+
+.button:hover {
+  animation-name: "size";
+  background-color: #eeab6d;
+  animation-duration: 2s;
+  transform: scale(1.2);
 }
 
 /* styles product offer on home page */
@@ -292,9 +294,107 @@ footer{
 
 
   /* For desktop: */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 760px) {
   .row .column {
     width: 8.33%;
+    box-sizing: border-box;
   }
+
+  .wrapper-menu{
+    background-color: #eeab6d;
+    padding: 14px;
+  }
+
+  .logo{
+    background-color: #eeab6d;
+    padding: 10px;
+  }
+
+  nav ul li {
+    list-style-type: none;
+    background-color: #eeab6d;
+    text-align: center;
+    padding: 16px;
+    margin-top: 0;
+  }
+
+  nav a:visited {
+    font-size: 18px;
+    color: #416057;
+    display: block;
+  }
+
+  nav ul li a,
+  .a1,
+  .s1,
+  .t1,
+  .c1{
+    text-decoration: none;
+    color:#416057;
+  }
+
+  .why{
+    background-color: #c5c381;
+    color: #416057;
+    padding: 12px 20px;
+    width: 200px;
+    align-items: center;
+    margin: 5px 5px 5px 80px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Single Day', cursive; 
+    font-size: 20px;
+  }
+
+  .check{
+    background-color: #eeab6d;
+    color: #416057;
+    padding: 12px 20px;
+    width: 200px;
+    align-items: center;
+    margin: 5px 5px 5px 80px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Single Day', cursive; 
+    font-size: 20px;
+  }
+  
+
+  .banner-content h1{
+    color:#eeab6d;
+    font-size: 50px;
+    font-family: 'Single Day', cursive;;
+  }
+  
+  .banner-content p{
+    color:white;
+    margin: 5px 0 40px 0;
+    font-size: 15px;
+  }
+
+  .column img {
+    width: 140px;
+    height: 140px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .row {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    grid-template-areas: 
+      "column column" 
+      "column column";
+  }
+
 }
+
+
 
