@@ -11,6 +11,7 @@ p {
 header{
 margin: 30px 0 30px 0;
 font-size: 35px;
+width: 100%;
 }
 
 /*resizes logo*/
@@ -314,22 +315,41 @@ footer{
     box-sizing: border-box;
   }
 
-  .wrapper-menu{
+  .wrapper-menu nav{
+    width: 90%;
+    max-width: 760px;
+    margin: 20px auto;
     background-color: #eeab6d;
     padding: 14px;
   }
 
-  .logo{
-    background-color: #eeab6d;
-    padding: 10px;
+  .wrapper-menu nav ul{
+    overflow: hidden;
+    list-style: none;
   }
 
-  nav ul li {
+  .wrapper-menu nav ul li {
     list-style-type: none;
     background-color: #eeab6d;
     text-align: center;
     padding: 16px;
     margin-top: 0;
+  }
+
+  .wrapper-menu nav ul li a{
+    color:#416057;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #eeab6d;
+    margin-top: 0;
+  }
+
+  .logo{
+    background-color: #eeab6d;
+    padding: 20px;
+    display: inline-block;
   }
 
   nav a:visited {
