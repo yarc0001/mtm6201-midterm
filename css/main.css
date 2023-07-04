@@ -6,6 +6,7 @@ p {
   font-family: 'Montserrat', sans-serif;
 } 
 
+@media only screen and (max-width: 1200px) {
 /*styles nav bar*/
 
 header{
@@ -25,16 +26,14 @@ width: 100%;
 ul{
   list-style: none;
   margin: 0;
-  padding: 5px;
   background-color: white;
   display: flex;
   justify-content: flex-end;
 }
 
 
-
 li a{
-  display: block;
+  display: flex;
   color: #416057;
   text-align: center;
   padding: 14px 16px;
@@ -168,7 +167,7 @@ li a:hover{
 .row {
   display: grid;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   grid-template-areas: 
     "column column column column";
 }
@@ -301,6 +300,8 @@ footer{
   width: 90px;
 }
 
+}
+
 
  /* For mobile: */
  [class="row-column"] {
@@ -309,128 +310,103 @@ footer{
 
 
   /* For desktop: */
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 770px) {
   .row .column {
     width: 8.33%;
     box-sizing: border-box;
+
   }
 
-  .wrapper-menu nav{
-    width: 90%;
-    max-width: 760px;
-    margin: 20px auto;
-    background-color: #eeab6d;
-    padding: 14px;
-  }
+.wrapper-menu{
+  background-color: #eeab6d;
+}
 
-  .wrapper-menu nav ul{
-    overflow: hidden;
-    list-style: none;
-  }
+nav ul{
+  background-color: #eeab6d;
+  display: block;
+  text-align: center;
+  padding: 0 25% 0 25%;
+}
 
-  .wrapper-menu nav ul li {
-    list-style-type: none;
-    background-color: #eeab6d;
-    text-align: center;
-    padding: 16px;
-    margin-top: 0;
-  }
+nav ul a{
+  text-align: center;
+  justify-content: center;
+}
 
-  .wrapper-menu nav ul li a{
-    color:#416057;
-    padding: 20px;
-    display: inline-block;
-    text-decoration: none;
-    list-style-type: none;
-    background-color: #eeab6d;
-    margin-top: 0;
-  }
+.logo{
+display: none;
+}
 
-  .logo{
-    background-color: #eeab6d;
-    padding: 20px;
-    display: inline-block;
-  }
+.cart-item {
+  display: none;
+}
 
-  nav a:visited {
-    font-size: 18px;
-    color: #416057;
-    display: block;
-  }
+.why{
+  background-color: #c5c381;
+  color: #416057;
+  padding: 12px 50px;
+  width: 200px;
+  margin: 5px 5px 5px 80px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Single Day', cursive; 
+  font-size: 20px;
+  justify-content: center;
+  display: block;
+}
 
-  nav ul li a,
-  .a1,
-  .s1,
-  .t1,
-  .c1{
-    text-decoration: none;
-    color:#416057;
-  }
+.why-container{
+  font-weight: bolder;
+}
 
-  .why{
-    background-color: #c5c381;
-    color: #416057;
-    padding: 12px 50px;
-    width: 200px;
-    align-items: center;
-    margin: 5px 5px 5px 80px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-family: 'Single Day', cursive; 
-    font-size: 20px;
-  }
-
-  .why-container{
-    font-weight: bolder;
-  }
-
-  .check{
-    background-color: #eeab6d;
-    color: #416057;
-    padding: 12px 20px;
-    width: 200px;
-    align-items: center;
-    margin: 5px 5px 5px 80px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-family: 'Single Day', cursive; 
-    font-size: 20px;
-  }
+.check{
+  background-color: #eeab6d;
+  color: #416057;
+  padding: 12px 20px;
+  width: 200px;
+  margin: 5px 5px 5px 80px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Single Day', cursive; 
+  font-size: 20px;
+  justify-content: center;
+  display: block;
+}
   
 
-  .banner-content h1{
-    color:#eeab6d;
-    font-size: 50px;
-    font-family: 'Single Day', cursive;;
-  }
+.banner-content h1{
+  color:#eeab6d;
+  font-size: 50px;
+  font-family: 'Single Day', cursive;;
+}
   
-  .banner-content p{
-    color:white;
-    margin: 5px 0 40px 0;
-    font-size: 15px;
-  }
+.banner-content p{
+  color:white;
+  margin: 5px 0 40px 0;
+  font-size: 15px;
+}
 
-  .column img {
-    width: 140px;
-    height: 140px;
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    align-items: center;
-  }
+.column img {
+  width: 140px;
+  height: 140px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
 
-  .row {
-    display: grid;
-    align-items: center;
-    justify-content: flex-start;
-    grid-template-areas: 
-      "column column" 
-      "column column";
-  }
+.row {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas: 
+    "column column" 
+    "column column";
+}
 
 }
 
