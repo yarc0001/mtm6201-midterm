@@ -269,27 +269,29 @@ font-size: 24px;
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #416057;
-  border-radius: 4px;
+  border: 2px solid #c5c381;
+  border-radius: 50px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
 }
 
-input[type=submit] {
-  background-color: #eeab6d;
+input[type=send] {
+  background-color: none;
+  text-transform: lowercase;
   color: #416057;
-  padding: 12px 20px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
   font-family: 'Single Day', cursive; 
-  font-size: 20px;
+  font-size: 40px;
+  width: 70px;
+
 }
 
-input[type=submit]:hover {
-  background-color: #646262;
+input[type=send]:hover {
+  transform: rotate(-45deg);
+  color: #eeab6d;
 }
 
 form .container {
