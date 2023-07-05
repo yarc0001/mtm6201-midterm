@@ -197,7 +197,6 @@ li a:hover{
 }
 
 .button:hover {
-  animation-name: "size";
   background-color: #eeab6d;
   animation-duration: 2s;
   transform: scale(1.2);
@@ -278,7 +277,6 @@ input[type=text], select, textarea {
 }
 
 input[type=send] {
-  background-color: none;
   text-transform: lowercase;
   color: #416057;
   border: none;
