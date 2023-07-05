@@ -236,7 +236,7 @@ font-size: 24px;
 
 .mission-img{
   position: absolute;
-  right: 360px;
+  right: 530px;
   top: 400px;
   width: 400px;
   height: 270px;
@@ -246,8 +246,8 @@ font-size: 24px;
   justify-content: center;
   position: absolute;
   align-items: center;
-  right: 380px;
-  top: 850px;
+  right: 560px;
+  top: 830px;
   width: 200px;
   height: 270px;
 }
@@ -286,7 +286,6 @@ input[type=send] {
   font-family: 'Single Day', cursive; 
   font-size: 40px;
   width: 70px;
-
 }
 
 input[type=send]:hover {
@@ -339,7 +338,7 @@ footer{
 }
 
 
-  /* For desktop: */
+  /* For mobile: */
 @media only screen and (max-width: 770px) {
   .row .column {
     width: 8.33%;
@@ -376,7 +375,7 @@ display: none;
   color: #416057;
   padding: 12px 50px;
   width: 200px;
-  margin: 5px 5px 5px 80px;
+  margin: 5px 5px 5px 40px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -435,6 +434,54 @@ display: none;
     "column column" 
     "column column";
 }
+
+/* styles form on contact page */
+
+.banner-contact {
+  font-size: 60px;
+}
+
+input[type=text], select, textarea {
+  width: 320px;
+}
+
+/* styles mission on about page */
+
+.banner-about {
+  font-size: 60px;
+}
+
+.mission, .vision {
+  border: solid 2px #eeab6d;
+  border-radius: 60px;
+  margin: 100px;
+  text-align: center;
+  font-size: 12px;
+}
+  
+.mission-title, .vision-title {
+  color: #416057;
+  font-size: 30px;
+}
+  
+.mission-img{
+  position: absolute;
+  right: 125px;
+  top: 520px;
+  width: 220px;
+  height: 190px;
+}
+  
+.vision-img {
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  right: 125px;
+  top: 790px;
+  width: 140px;
+  height: 190px;
+}
+  
 
 }
 
