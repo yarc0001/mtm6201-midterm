@@ -6,7 +6,7 @@ p {
   font-family: 'Montserrat', sans-serif;
 } 
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1500px) {
 /*styles nav bar*/
 
 header{
@@ -217,19 +217,47 @@ li a:hover{
 
 /* styles mission on about page */
 
-.mission , .vision {
+.banner-about {
+  color:#eeab6d;
+}
+
+.mission, .vision {
 border: solid 2px #eeab6d;
 border-radius: 60px;
 margin: 100px;
+text-align: center;
+font-size: 24px;
 }
 
-.mission-title , .vision-title {
+.mission-title, .vision-title {
   color: #416057;
-  font-size: 70px;
+  font-size: 80px;
+}
+
+.mission-img{
+  position: absolute;
+  right: 360px;
+  top: 400px;
+  width: 400px;
+  height: 270px;
+}
+
+.vision-img {
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  right: 380px;
+  top: 850px;
+  width: 200px;
+  height: 270px;
 }
 
 
 /* styles form on contact page */
+
+.banner-contact {
+  color: #eeab6d;
+}
 
 .contact-form {
   width: 90%;
@@ -288,7 +316,7 @@ form .container {
 /* styles footer */
 
 footer{
-  display: block;
+  /* display: block; */
   background-color: #c5c381;
   margin: 0;
   padding: 0;
@@ -353,7 +381,6 @@ display: none;
   font-family: 'Single Day', cursive; 
   font-size: 20px;
   justify-content: center;
-  display: block;
 }
 
 .why-container{
@@ -372,7 +399,6 @@ display: none;
   font-family: 'Single Day', cursive; 
   font-size: 20px;
   justify-content: center;
-  display: block;
 }
   
 
