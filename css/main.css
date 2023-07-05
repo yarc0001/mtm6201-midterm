@@ -41,7 +41,7 @@ li a{
 }
 
 li a:hover{
-  background-color: #c5c381;
+  background-color: #eeab6d81;
 }
 
 .wrapper menu{
@@ -327,6 +327,10 @@ footer{
   width: 90px;
 }
 
+.access{
+  color: #eeab6d;
+}
+
 }
 
 
@@ -344,12 +348,16 @@ footer{
 
   }
 
-.wrapper-menu{
-  background-color: #eeab6d;
-}
+/* .wrapper-menu{
+  background-color: #fff7f7;
+}  */
+
+li a:hover{
+  background-color: white;
+} 
 
 nav ul{
-  background-color: #eeab6d;
+  background-color: #c5c381;
   display: block;
   text-align: center;
   padding: 0 25% 0 25%;
@@ -480,7 +488,6 @@ input[type=text], select, textarea {
   height: 190px;
 }
   
-
 }
 
 
