@@ -20,7 +20,7 @@ width: 100%;
 .logo {
   width: 230px;
   height: 80px;
-  float: left;
+  /* float: left; */
 }
 
 ul{
@@ -348,19 +348,18 @@ footer{
 
   }
 
-/* .wrapper-menu{
-  background-color: #fff7f7;
-}  */
-
 li a:hover{
   background-color: white;
 } 
 
 nav ul{
   background-color: #c5c381;
-  display: block;
-  text-align: center;
+  display:grid;
+  /* text-align: center; */
   padding: 0 25% 0 25%;
+  margin: 15px 0 15px 0;
+  /* height: 230px; */
+  top: 20px;
 }
 
 nav ul a{
@@ -368,8 +367,15 @@ nav ul a{
   justify-content: center;
 }
 
+.wrapper-menu .logo{
+  justify-content: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 .logo{
-display: none;
+display: flex;
 }
 
 .cart-item {
@@ -473,7 +479,7 @@ input[type=text], select, textarea {
 .mission-img{
   position: absolute;
   right: 125px;
-  top: 520px;
+  top: 560px;
   width: 220px;
   height: 190px;
 }
@@ -483,7 +489,7 @@ input[type=text], select, textarea {
   position: absolute;
   align-items: center;
   right: 125px;
-  top: 790px;
+  top: 840px;
   width: 140px;
   height: 190px;
 }
