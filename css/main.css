@@ -20,7 +20,7 @@ width: 100%;
 .logo {
   width: 230px;
   height: 80px;
-  /* float: left; */
+  float: left;
 }
 
 ul{
@@ -236,8 +236,8 @@ font-size: 24px;
 
 .mission-img{
   position: absolute;
-  right: 530px;
-  top: 400px;
+  right: 40%;
+  top: 65%;
   width: 400px;
   height: 270px;
 }
@@ -246,8 +246,8 @@ font-size: 24px;
   justify-content: center;
   position: absolute;
   align-items: center;
-  right: 560px;
-  top: 830px;
+  right: 42%;
+  bottom: -82%;
   width: 200px;
   height: 270px;
 }
@@ -488,8 +488,10 @@ input[type=text], select, textarea {
   
 .mission-img{
   position: absolute;
-  right: 125px;
-  top: 560px;
+  /* right: 125px;
+  top: 560px; */
+  right: 33%;
+  top: 71%;
   width: 220px;
   height: 190px;
 }
@@ -498,8 +500,10 @@ input[type=text], select, textarea {
   justify-content: center;
   position: absolute;
   align-items: center;
-  right: 125px;
-  top: 840px;
+  /* right: 125px;
+  top: 840px; */
+  right: 33%;
+  bottom: -26%;
   width: 140px;
   height: 190px;
 }
