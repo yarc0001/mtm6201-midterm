@@ -13,10 +13,10 @@
 <body>
   <!-- adding logo and nav menu -->
 
-  <header id="top">
+  <header id="top" role="banner">
       <div class="wrapper-menu">
         <div><a href="index.html"><img src="images/logo-1.png" alt="logo" class="logo"></a></div>
-        <nav>
+        <nav role="navigation">
           <ul>
             <li><a href="index.html" class="menu-item">Home</a></li>
             <li><a href="about.html" class="menu-item">About us</a></li>
@@ -33,11 +33,11 @@
 
 
   <!-- adds form -->
-
+<main role="main">
   <div class="contact-form">
     <h1 class="send-title">Send us a message</h1>
     <div class="container">
-      <form action="/action_page.php">
+      <form action="/action_page.php" role="form">
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
     
@@ -54,8 +54,7 @@
       </form>
     </div>
   </div>
-
-   
+</main>
 
      <a class="access" href="#top">Back to top &uarr;</a> 
 
